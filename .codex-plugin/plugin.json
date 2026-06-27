@@ -21,7 +21,6 @@
     "workflow"
   ],
   "skills": "./skills/",
-  "hooks": "./hooks/hooks-codex.json",
   "interface": {
     "displayName": "Powerset",
     "shortDescription": "Opt-in planning and workflow skills for Codex",

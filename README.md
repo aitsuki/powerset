@@ -110,18 +110,16 @@ agent 应该直接按普通调试任务处理，而不是自动进入 Powerset w
 - `using-git-worktrees`：显式要求时创建或检查 git worktree
 - `dispatching-parallel-agents`：显式要求时并行派发子代理
 - `writing-skills`：编写或修改 Powerset skill
-- `using-powerset`：会话启动时注入的 skill 使用规则
+- `using-powerset`：手动查看 Powerset skill 使用规则
 
 ## Codex 插件说明
 
 Codex 插件入口在：
 
 - `.codex-plugin/plugin.json`
-- `hooks/hooks-codex.json`
-- `hooks/session-start-codex`
 - `skills/`
 
-`hooks/session-start-codex` 会把 `using-powerset` 注入上下文，注入内容是中文个人版的核心规则：Powerset 是显式 opt-in 工具箱，不自动调用其他 skill。
+Powerset 不再使用 SessionStart hook 注入上下文；所有 skill 都是显式 opt-in，按需手动触发。
 
 Codex 插件 manifest 中的名称是：
 
