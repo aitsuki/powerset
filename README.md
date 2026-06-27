@@ -131,41 +131,16 @@ powerset
 
 如果通过个人 marketplace 安装，优先使用这个名字，不要再用官方的 `superpowers` 标识。
 
-## Claude marketplace
+## Marketplace
 
-配套 marketplace 仓库：
+配套 marketplace 仓库:
 
 ```text
 https://github.com/aitsuki/powerset-marketplace
 ```
 
-安装 marketplace：
+插件安装方式请看 marketplace 的 README.md
 
-```text
-/plugin marketplace add aitsuki/powerset-marketplace
-```
-
-安装插件：
-
-```text
-/plugin install powerset@powerset-marketplace
-```
-
-## 本地验证
-
-检查 diff 中是否有空白问题：
-
-```bash
-git diff --check
-```
-
-如果你改了 shell hook，请注意保持 LF 换行。`.gitattributes` 已经固定：
-
-- `.gitattributes`
-- `*.sh`
-- `hooks/session-start`
-- `hooks/session-start-codex`
-- `*.cmd`
 
 ## 和上游的关系
 
@@ -175,7 +150,6 @@ git diff --check
 - 它有意降低 TDD、worktree、子代理审查的默认强度
 - 它面向个人使用偏好，而不是 Superpowers core 的通用设计
 
-如果需要向上游贡献，请阅读 [CLAUDE.md](CLAUDE.md) 和 `.github/PULL_REQUEST_TEMPLATE.md`，并遵循上游贡献规则。
 
 ## 许可证
 
